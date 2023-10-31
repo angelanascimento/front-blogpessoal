@@ -1,0 +1,12 @@
+.titulo {
+    color: rgb(243, 163, 203);
+    text-align: center;
+}
+
+.img {
+    display: block;
+    height: 31.25rem;
+    margin: 0 auto;
+    width: 31.25rem;
+    
+}
