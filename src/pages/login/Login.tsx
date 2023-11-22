@@ -1,10 +1,9 @@
-
 import { ChangeEvent, useContext, useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import { RotatingLines } from 'react-loader-spinner'
+import { RotatingLines } from 'react-loader-spinner';
 
-import { AuthContext } from '../../contexts/AuthContext'
-import UsuarioLogin from '../../models/UsuarioLogin'
+import { AuthContext } from '../../contexts/AuthContext';
+import UsuarioLogin from '../../models/UsuarioLogin';
 
 import './Login.css';
 
@@ -35,11 +34,10 @@ function Login() {
         handleLogin(usuarioLogin)
     }
 
-        return (
+    return (
         <>
             <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold">
-                <form className="flex justify-center items-center flex-col w-1/2 gap-4" 
-                    onSubmit={login}>
+                <form className="flex justify-center items-center flex-col w-1/2 gap-4" onSubmit={login}>
                     <h2 className="text-slate-900 text-5xl ">Entrar</h2>
                     <div className="flex flex-col w-full">
                         <label htmlFor="usuario">Usuário</label>
